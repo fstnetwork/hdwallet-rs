@@ -1,0 +1,22 @@
+[package]
+name = "hdwallet"
+version = "0.1.0"
+authors = ["fstnetwork <admin@fstk.io>"]
+edition = "2018"
+
+[dependencies]
+bitcoin = "0.13"
+error-chain = "0.12"
+ethereum-types = "0.5.2"
+ethsign = { git = "https://github.com/fstnetwork/ethsign", tag = "v0.5.1", features = [ "pure-rust" ] }
+hmac = "0.6"
+lazy_static = "1.2"
+num = "0.2"
+pbkdf2 = "0.2"
+rand = "0.3"
+regex = "1.0"
+scrypt = "0.1"
+secp256k1 = { version = "0.9", features = [ "rand" ] }
+serde = "1.0"
+serde_derive = "1.0"
+sha2 = "0.7"
